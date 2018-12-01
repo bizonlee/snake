@@ -7,23 +7,20 @@ namespace Snake
         static void Main(string[] args)
         {
             // Console.WriteLine("Hello World!;");
-            int x = 1;
-            int y = 3;
+            int x1 = 1;
+            int y1 = 3;
             char sym1 = '*';
-
-            Console.SetCursorPosition(x,y);
-            Console.Write(sym1);
-
+            Draw(x1,y1,sym1);
             int x2 = 9;
             int y2 = 4;
             char sym2 = '#';
-
-            Console.SetCursorPosition(x2, y2);
-            Console.Write(sym2);
-
-
-
+            Draw(x2, y2, sym2);
             Console.ReadKey();
+        }
+        static void Draw(int x, int y, char sym)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(sym);
         }
     }
 }
