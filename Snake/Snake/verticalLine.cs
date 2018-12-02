@@ -6,11 +6,11 @@ namespace Snake
 {
     
 
-    class verticalLine
+    class VerticalLine
     {
         List<Point> pointList;
 
-        public verticalLine(int x, int yTop, int yBottom,  char sym)
+        public VerticalLine(int x, int yTop, int yBottom,  char sym)
         {
             pointList = new List<Point>();
             for (int y = yTop; y <= yBottom; y++)
