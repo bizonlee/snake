@@ -6,9 +6,9 @@ namespace Snake
 {
     
 
-    class VerticalLine
+    class VerticalLine: Figure
     {
-        List<Point> pointList;
+        //List<Point> pointList;
 
         public VerticalLine(int x, int yTop, int yBottom,  char sym)
         {
@@ -21,12 +21,6 @@ namespace Snake
             
         }
 
-        public void Draw()
-        {
-            foreach (Point p in pointList)
-            {
-                p.Draw();
-            }
-        }
+       
     }
 }
