@@ -8,7 +8,7 @@ namespace Snake
         static void Main(string[] args)
         {
            //Console.SetBufferSize( 110, 350 );
-           Point p1 = new Point(1,2, '*');
+           
           //  p1.Draw();
             Point p2 = new Point(9,15, '#');
             //  p2.Draw();
@@ -25,6 +25,9 @@ namespace Snake
             vLine1.Draw();
             vLine2.Draw();
 
+            Point p = new Point(7, 8, '*');
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Draw();
 
 
             Console.ReadKey();
